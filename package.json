@@ -13,9 +13,20 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "publish-packages": "turbo run build lint test && changeset version && changeset publish"
+    "publish-packages": "turbo run build lint test && changeset version && changeset publish",
+    "storybook": "start-storybook -p 7007",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@storybook/addon-actions": "^5.3",
+    "@storybook/addon-knobs": "^5.3",
+    "@storybook/addon-links": "^5.3",
+    "@storybook/addon-ondevice-actions": "^6.5.2",
+    "@storybook/addon-ondevice-knobs": "^6.5.2",
+    "@storybook/react-native": "^6.5.2",
+    "@storybook/react-native-server": "^6.5.2",
+    "babel-loader": "^8.3.0",
     "eslint-config-custom": "*",
     "prettier": "latest",
     "react-native-builder-bob": "^0.20.4",
