@@ -34,3 +34,5 @@ yarn-error.log*
 .idea
 lib/
 dist/
+
+storybook.requires.js
