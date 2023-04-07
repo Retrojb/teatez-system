@@ -1,0 +1,38 @@
+{
+  "name": "@teatez-design-system/icons",
+  "version": "0.0.1",
+  "description": "Icons",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "react-native": "src/index.ts",
+  "types": "lib/typescript/index.d.ts",
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "license": "UNLICESEND",
+  "private": true,
+  "scripts": {
+    "build": "bob build"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.3"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      [
+        "commonjs",
+        {
+          "copyFlow": true
+        }
+      ],
+      "module",
+      "typescript"
+    ]
+  },
+  "dependencies": {
+    "tsconfig": "^7.0.0"
+  }
+}

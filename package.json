@@ -4,22 +4,31 @@
   "private": true,
   "workspaces": [
     "apps/*",
-    "packages/*"
+    "apps/native/*",
+    "packages/*",
+    "packages/@teatez-design-system/*"
   ],
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "publish-packages": "turbo run build lint test && changeset version && changeset publish"
   },
   "devDependencies": {
     "eslint-config-custom": "*",
     "prettier": "latest",
+    "react-native-builder-bob": "^0.20.4",
     "turbo": "latest"
   },
-  "engines": {
-    "node": ">=14.0.0"
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-native": "^0.71.4",
+    "react-native-web": "^0.19.1",
+    "typescript": "^5.0.2"
   },
-  "dependencies": {},
-  "packageManager": "npm@8.10.0"
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }

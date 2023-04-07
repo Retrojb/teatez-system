@@ -1,4 +1,4 @@
-import { Button } from "ui";
+import { Button } from "@teatez-design-system/core";
 
 export default function Web() {
   return (
